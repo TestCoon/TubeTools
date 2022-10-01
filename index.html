@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title></title>
 	</head>
 	<body>
-		<input id="myInput" style="position: absolute; top: 10%; left: 5%; width: 90%; height: 10%;" placeholder="Youtube Channel URL" onchange="getInputValue();">
+		<input id="myInput" style="position: absolute; top: 10%; left: 5%; width: 90%; height: 10%;" placeholder="Youtube Channel URL" oninput="getInputValue();">
 		<a id="myURL" style="position: absolute; top: 30%; left: 5%; width: 90%; height: 10%;" href="url">link</a>
 		<script>
 			function getInputValue(){
