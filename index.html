@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="myInput" placeholder="Youtube Channel URL" onclick="">
+		<button type="button" onclick="getInputValue();">Go</button>
+		<script>
+			function getInputValue(){
+				// Selecting the input element and get its value 
+				var channelID = document.getElementById("myInput").value;
+				var PREFIX1 = "https://www.youtube.com/channel/UC";
+				var PREFIX2 = "https://www.youtube.com/c/UC";
+				if (channelID.startsWith(PREFIX1)) {
+					// PREFIX1 is exactly at the beginning
+					channelID = channelID.slice(PREFIX1.length);
+					window.open("https://playlist.tools/UU" + channelID);
+				} else if (channelID.startsWith(PREFIX2)) {
+					// PREFIX2 is exactly at the beginning
+					channelID = channelID.slice(PREFIX1.length);
+					window.open("https://playlist.tools/UU" + channelID);
+				} else {
+					
+				}
+			}
+		</script>
+	</body>
+</html>
